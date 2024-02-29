@@ -1,0 +1,11 @@
+<Project>
+  <Import Project="..\repo.props" />
+
+  <PropertyGroup>
+    <PackagePublisher Condition="'$(PackagePublisher)' == ''">$(Publisher)</PackagePublisher>
+    <PackagePublisherDisplayName Condition="'$(PackagePublisherDisplayName)' == ''">$(PublisherDisplayName)</PackagePublisherDisplayName>
+    <PackageVersion Condition="'$(PackageVersion)' == ''">$(Version)</PackageVersion>
+    <PackageDisplayName Condition="'$(PackageDisplayName)' == ''">Rajendra Commerce Customization</PackageDisplayName>
+    <PackageDescription Condition="'$(PackageDescription)' == ''">Rajendra Commerce Customization</PackageDescription>
+  </PropertyGroup>
+</Project>

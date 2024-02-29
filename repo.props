@@ -1,0 +1,26 @@
+<Project>
+  <PropertyGroup>
+    <BuildNumber Condition="'$(BuildNumber)' == ''">0.0</BuildNumber>
+    <MajorVersion>9.44</MajorVersion>
+    <Version Condition="'$(Version)' == ''">$(MajorVersion).$(BuildNumber)</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Publisher Condition="'$(Publisher)' == ''">CN=Rajendra Ltd.</Publisher>
+    <PublisherDisplayName Condition="'$(PublisherDisplayName)' == ''">Rajendra Ltd.</PublisherDisplayName>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CommerceSdkPackagesVersion>[9.44.*,9.45)</CommerceSdkPackagesVersion>
+    <CommercePosPackagesVersion>[9.44.*,9.45)</CommercePosPackagesVersion>
+    <CommerceChannelPackagesVersion>[9.44.*,9.45)</CommerceChannelPackagesVersion>
+    <CommerceHwsPackagesVersion>[9.44.*,9.45)</CommerceHwsPackagesVersion>
+    <CommerceToolsPackagesVersion>[10.34.*,10.35)</CommerceToolsPackagesVersion>
+    <CommercePaymentsPackagesVersion>[10.48.*,10.49)</CommercePaymentsPackagesVersion>
+	<TypeScriptPackagesVersion>4.7.*</TypeScriptPackagesVersion>
+	<!-- Newtonsoft.Json -->
+    <NewtonsoftJsonVersion>13.0.2</NewtonsoftJsonVersion>
+	<!-- Custom packages -->
+	<RRPackageVersion>9.44.400.147</RRPackageVersion>
+  </PropertyGroup>
+</Project>
