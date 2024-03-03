@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelDatabase", "..\Rajen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Runtime.Extension.StoreHours", "..\Rajendra.Extensions\CommerceRuntime\Runtime.Extension.StoreHours\Runtime.Extension.StoreHours.csproj", "{56A34F49-2B0C-4025-8074-1DCA049E1F1A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.ScaleUnit.Installer", "StoreCommerce.Installer\Rajendra.ScaleUnit.Installer\Rajendra.ScaleUnit.Installer.csproj", "{A76F94A7-D738-4C84-BCB8-F52E13A886B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.ScaleUnit.Installer", "..\Rajendra.ScaleUnit\Rajendra.ScaleUnit.Installer\Rajendra.ScaleUnit.Installer.csproj", "{ABC2A504-1963-4999-97B8-58F540185666}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{56A34F49-2B0C-4025-8074-1DCA049E1F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56A34F49-2B0C-4025-8074-1DCA049E1F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A34F49-2B0C-4025-8074-1DCA049E1F1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC2A504-1963-4999-97B8-58F540185666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC2A504-1963-4999-97B8-58F540185666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC2A504-1963-4999-97B8-58F540185666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC2A504-1963-4999-97B8-58F540185666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
