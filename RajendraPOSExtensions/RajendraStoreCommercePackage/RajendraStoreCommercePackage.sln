@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.SC.Installer", "StoreCommerce.Installer\Rajendra.SC.Installer\Rajendra.SC.Installer.csproj", "{E9DD731A-F6DF-49EA-9F92-851A6534C13D}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POS", "..\Rajendra.Extensions\POS\POS.csproj", "{965C8F22-EA2B-4B53-AFD3-3F001C7BAD52}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelDatabase", "..\Rajendra.Extensions\ChannelDatabase\ChannelDatabase.csproj", "{34005660-96A0-448C-9E6F-E7328BB046A7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Runtime.Extension.StoreHours", "..\Rajendra.Extensions\CommerceRuntime\Runtime.Extension.StoreHours\Runtime.Extension.StoreHours.csproj", "{56A34F49-2B0C-4025-8074-1DCA049E1F1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.ScaleUnit.Installer", "StoreCommerce.Installer\Rajendra.ScaleUnit.Installer\Rajendra.ScaleUnit.Installer.csproj", "{A76F94A7-D738-4C84-BCB8-F52E13A886B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9DD731A-F6DF-49EA-9F92-851A6534C13D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9DD731A-F6DF-49EA-9F92-851A6534C13D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9DD731A-F6DF-49EA-9F92-851A6534C13D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9DD731A-F6DF-49EA-9F92-851A6534C13D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{965C8F22-EA2B-4B53-AFD3-3F001C7BAD52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{965C8F22-EA2B-4B53-AFD3-3F001C7BAD52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{965C8F22-EA2B-4B53-AFD3-3F001C7BAD52}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{56A34F49-2B0C-4025-8074-1DCA049E1F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56A34F49-2B0C-4025-8074-1DCA049E1F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56A34F49-2B0C-4025-8074-1DCA049E1F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76F94A7-D738-4C84-BCB8-F52E13A886B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

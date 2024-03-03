@@ -21,3 +21,17 @@ This extension is to get the store hours. Below are the sequence of objects crea
 	5. Controller class is created to call the specific API. API methods takes the input parameters and contructs the Request class.
 	   Request is executed and response class is returned. Finally returns the result using the response class.
 
+3. Create a Scale Unit Installer and deploy
+    
+	After creating required CRT extensions, we need to deploy the changes to Retail Server so that API's can be consumed in POS/POSTMAN/C#.
+	Create a new Console Application project for Scale Unit, added a Scale Unit dependency. We need to add the Project dependency as below
+	1. Scale Unit Nuget Dependency -> <PackageReference Include="Microsoft.Dynamics.Commerce.Sdk.Installers.ScaleUnit" Version="$(CommerceSdkPackagesVersion)" />
+	2. Project Dependency ->
+		<ProjectReference Include="..\..\..\Rajendra.Extensions\ChannelDatabase\ChannelDatabase.csproj" ReferenceOutputAssembly="false" />
+		<ProjectReference Include="..\..\..\Rajendra.Extensions\CommerceRuntime\Runtime.Extension.StoreHours\Runtime.Extension.StoreHours.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+		<ProjectReference Include="..\..\..\Rajendra.Extensions\POS\POS.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+
+	3. After building the Scale unit installer project, it will automatically create a new EXE file for CRT extension installer.
+	4. Deploy the EXE and validate the custom CRT extension API's using retail server URL metadata.
+	
+4. Added sample Controller classes to return boolean values, string values.
