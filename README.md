@@ -35,3 +35,6 @@ This extension is to get the store hours. Below are the sequence of objects crea
 	4. Deploy the EXE and validate the custom CRT extension API's using retail server URL metadata.
 	
 4. Added sample Controller classes to return boolean values, string values.
+5. Test from postman (Prerequisites are completed before API call, like Bearer Token).
+   1. {{General_RetailServer}}/RetailServer/Commerce/RajendraEntityAPI/GetMyName?api-version=7.3z
+   2. {{General_RetailServer}}/RetailServer/Commerce/RajSampleGet?api-version=7.3
