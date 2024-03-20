@@ -22,17 +22,17 @@
     import * as DataServiceEntities from './DataServiceEntities.g';
 
     
-    function rajSamplePostQuery(): DataServiceQuery {
+    function rajSamplePostFromCommonProjectQuery(): DataServiceQuery {
           return new DataServiceQuery();
           }
 
     
-    export function rajSamplePostInput (
+    export function rajSamplePostFromCommonProjectInput (
         
     ): IDataServiceRequest {
-      const query = rajSamplePostQuery();
+      const query = rajSamplePostFromCommonProjectQuery();
       return query.createDataServiceRequestForOperation(
-          'RajSamplePost',
+          'RajSamplePostFromCommonProject',
           true, 
             ''
           ,
@@ -44,24 +44,24 @@
       );
     }
 
-    export function rajSamplePostAsync (
+    export function rajSamplePostFromCommonProjectAsync (
         context: IContext
         ): AsyncResult<boolean> {
-        const request = rajSamplePostInput();
+        const request = rajSamplePostFromCommonProjectInput();
         return callActionOrExecute<boolean>(request, context.callerContext);
         }
       
-    function rajSampleGetQuery(): DataServiceQuery {
+    function rajSampleGetFromCommonProjectQuery(): DataServiceQuery {
           return new DataServiceQuery();
           }
 
     
-    export function rajSampleGetInput (
+    export function rajSampleGetFromCommonProjectInput (
         
     ): IDataServiceRequest {
-      const query = rajSampleGetQuery();
+      const query = rajSampleGetFromCommonProjectQuery();
       return query.createDataServiceRequestForOperation(
-          'RajSampleGet',
+          'RajSampleGetFromCommonProject',
           false, 
             ''
           ,
@@ -73,10 +73,10 @@
       );
     }
 
-    export function rajSampleGetAsync (
+    export function rajSampleGetFromCommonProjectAsync (
         context: IContext
         ): AsyncResult<boolean> {
-        const request = rajSampleGetInput();
+        const request = rajSampleGetFromCommonProjectInput();
         return callActionOrExecute<boolean>(request, context.callerContext);
         }
       
@@ -88,37 +88,37 @@
         }
 
         
-    export function createGetStoreHoursByRecIdInput(queryResultSettings: IQueryResultSettings, storeNumber: string): IDataServiceRequest {
+    export function createGetStoreHoursByRecIdFromCommonProjectInput(queryResultSettings: IQueryResultSettings, storeNumber: string): IDataServiceRequest {
     const query = rajendraEntityAPIQuery().resultSettings(queryResultSettings);
-    return query.createDataServiceRequestForOperation('GetStoreHoursByRecId', true, DataServiceEntities.RajStoreDayHoursEntityExtensionClass, 'true', {bypassCache: 'none', returnEntity: 'DataServiceEntities.IRajStoreDayHoursEntity'}, {storeNumber: storeNumber });
+    return query.createDataServiceRequestForOperation('GetStoreHoursByRecIdFromCommonProject', true, DataServiceEntities.RajStoreDayHoursEntityExtensionClass, 'true', {bypassCache: 'none', returnEntity: 'DataServiceEntities.IRajStoreDayHoursEntity'}, {storeNumber: storeNumber });
     }
 
     
-    export function getStoreHoursByRecIdAsync(context: IContext, storeNumber: string): AsyncResult<DataServiceEntities.IRajStoreDayHoursEntity[]> {
-    const request = createGetStoreHoursByRecIdInput(
+    export function getStoreHoursByRecIdFromCommonProjectAsync(context: IContext, storeNumber: string): AsyncResult<DataServiceEntities.IRajStoreDayHoursEntity[]> {
+    const request = createGetStoreHoursByRecIdFromCommonProjectInput(
       context.queryResultSettings || {}, storeNumber);
     return callActionOrExecute<DataServiceEntities.IRajStoreDayHoursEntity[]>(request, context.callerContext);
     }
   
-    export function createGetMyNameInput(): IDataServiceRequest {
+    export function createGetMyNameFromCommonProjectInput(): IDataServiceRequest {
     const query = rajendraEntityAPIQuery();
-    return query.createDataServiceRequestForOperation('GetMyName', false, '', 'false', {bypassCache: 'none', returnEntity: ''}, { });
+    return query.createDataServiceRequestForOperation('GetMyNameFromCommonProject', false, '', 'false', {bypassCache: 'none', returnEntity: ''}, { });
     }
 
     
-    export function getMyNameAsync(context: IContext): AsyncResult<string> {
-    const request = createGetMyNameInput();
+    export function getMyNameFromCommonProjectAsync(context: IContext): AsyncResult<string> {
+    const request = createGetMyNameFromCommonProjectInput();
     return callActionOrExecute<string>(request, context.callerContext);
     }
   
-    export function createGetSampleForBooleanInput(): IDataServiceRequest {
+    export function createGetSampleForBooleanFromCommonProjectInput(): IDataServiceRequest {
     const query = rajendraEntityAPIQuery();
-    return query.createDataServiceRequestForOperation('GetSampleForBoolean', false, '', 'false', {bypassCache: 'none', returnEntity: ''}, { });
+    return query.createDataServiceRequestForOperation('GetSampleForBooleanFromCommonProject', false, '', 'false', {bypassCache: 'none', returnEntity: ''}, { });
     }
 
     
-    export function getSampleForBooleanAsync(context: IContext): AsyncResult<boolean> {
-    const request = createGetSampleForBooleanInput();
+    export function getSampleForBooleanFromCommonProjectAsync(context: IContext): AsyncResult<boolean> {
+    const request = createGetSampleForBooleanFromCommonProjectInput();
     return callActionOrExecute<boolean>(request, context.callerContext);
     }
   

@@ -29,28 +29,28 @@ namespace Rajendra.Commerce.RetailProxy.Extension
     
         
         /// <summary>
-        /// RajSamplePost method.
+        /// RajSamplePostFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        public async Task<bool> RajSamplePost()
+        public async Task<bool> RajSamplePostFromCommonProject()
         {       
             return await this.context.ExecuteOperationSingleResultAsync<bool>(
                 "",
                 "StoreOperations",
-                "RajSamplePost",
+                "RajSamplePostFromCommonProject",
                 true, null);
         }
         
         /// <summary>
-        /// RajSampleGet method.
+        /// RajSampleGetFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        public async Task<bool> RajSampleGet()
+        public async Task<bool> RajSampleGetFromCommonProject()
         {       
             return await this.context.ExecuteOperationSingleResultAsync<bool>(
                 "",
                 "StoreOperations",
-                "RajSampleGet",
+                "RajSampleGetFromCommonProject",
                 false, null);
         }
         
@@ -132,43 +132,43 @@ namespace Rajendra.Commerce.RetailProxy.Extension
         // Operations
         
         /// <summary>
-        /// GetStoreHoursByRecId method.
+        /// GetStoreHoursByRecIdFromCommonProject method.
         /// </summary>
         /// <param name="storeNumber">The storeNumber.</param>
         /// <param name="queryResultSettings">The queryResultSettings.</param>
         /// <returns>Collection of RajStoreDayHoursEntity.</returns>
-        public async Task<PagedResult<RajStoreDayHoursEntity>> GetStoreHoursByRecId(string storeNumber, QueryResultSettings queryResultSettings = null)
+        public async Task<PagedResult<RajStoreDayHoursEntity>> GetStoreHoursByRecIdFromCommonProject(string storeNumber, QueryResultSettings queryResultSettings = null)
         {       
             return await this.context.ExecuteOperationAsync<RajStoreDayHoursEntity>(
                 "RajendraEntityAPI",
                 "RajStoreDayHoursEntity",
-                "GetStoreHoursByRecId",
+                "GetStoreHoursByRecIdFromCommonProject",
                 true, queryResultSettings, null, OperationParameter.Create("storeNumber", storeNumber, false));
         }
         
         /// <summary>
-        /// GetMyName method.
+        /// GetMyNameFromCommonProject method.
         /// </summary>
         /// <returns>string object.</returns>
-        public async Task<string> GetMyName()
+        public async Task<string> GetMyNameFromCommonProject()
         {       
             return await this.context.ExecuteOperationSingleResultAsync<string>(
                 "RajendraEntityAPI",
                 "RajStoreDayHoursEntity",
-                "GetMyName",
+                "GetMyNameFromCommonProject",
                 false, null);
         }
         
         /// <summary>
-        /// GetSampleForBoolean method.
+        /// GetSampleForBooleanFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        public async Task<bool> GetSampleForBoolean()
+        public async Task<bool> GetSampleForBooleanFromCommonProject()
         {       
             return await this.context.ExecuteOperationSingleResultAsync<bool>(
                 "RajendraEntityAPI",
                 "RajStoreDayHoursEntity",
-                "GetSampleForBoolean",
+                "GetSampleForBooleanFromCommonProject",
                 false, null);
         }
         

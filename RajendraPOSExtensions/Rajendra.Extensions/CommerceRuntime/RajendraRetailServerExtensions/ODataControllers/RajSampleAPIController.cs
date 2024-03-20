@@ -16,7 +16,7 @@ namespace RajendraRetailServerExtensions.ODataControllers
         /// <returns>A simple true value to indicate the endpoint was reached.</returns>
         [HttpGet]
         [Authorization(CommerceRoles.Anonymous, CommerceRoles.Application, CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee, CommerceRoles.Storefront)]
-        public Task<bool> RajSampleGet()
+        public Task<bool> RajSampleGetFromCommonProject()
         {
             return Task.FromResult(true);
         }
@@ -27,7 +27,7 @@ namespace RajendraRetailServerExtensions.ODataControllers
         /// <returns>A simple true value to indicate the endpoint was reached.</returns>
         [HttpPost]
         [Authorization(CommerceRoles.Customer, CommerceRoles.Device, CommerceRoles.Employee)]
-        public Task<bool> RajSamplePost()
+        public Task<bool> RajSamplePostFromCommonProject()
         {
             return Task.FromResult(true);
         }

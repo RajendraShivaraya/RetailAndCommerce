@@ -17,16 +17,16 @@ namespace Rajendra.Commerce.RetailProxy.Extension.Adapters
     {
         
         /// <summary>
-        /// RajSamplePost method.
+        /// RajSamplePostFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        Task<bool> RajSamplePost();
+        Task<bool> RajSamplePostFromCommonProject();
     
         /// <summary>
-        /// RajSampleGet method.
+        /// RajSampleGetFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        Task<bool> RajSampleGet();
+        Task<bool> RajSampleGetFromCommonProject();
     
     }
     
@@ -38,24 +38,24 @@ namespace Rajendra.Commerce.RetailProxy.Extension.Adapters
     {
         
         /// <summary>
-        /// GetStoreHoursByRecId method.
+        /// GetStoreHoursByRecIdFromCommonProject method.
         /// </summary>
         /// <param name="storeNumber">The storeNumber.</param>
         /// <param name="queryResultSettings">The queryResultSettings.</param>
         /// <returns>Collection of Runtime.Extension.StoreHours.Entities.RajStoreDayHoursEntity.</returns>
-        Task<Microsoft.Dynamics.Commerce.Runtime.PagedResult<Runtime.Extension.StoreHours.Entities.RajStoreDayHoursEntity>> GetStoreHoursByRecId(string storeNumber, Microsoft.Dynamics.Commerce.Runtime.DataModel.QueryResultSettings queryResultSettings = null);
+        Task<Microsoft.Dynamics.Commerce.Runtime.PagedResult<Runtime.Extension.StoreHours.Entities.RajStoreDayHoursEntity>> GetStoreHoursByRecIdFromCommonProject(string storeNumber, Microsoft.Dynamics.Commerce.Runtime.DataModel.QueryResultSettings queryResultSettings = null);
     
         /// <summary>
-        /// GetMyName method.
+        /// GetMyNameFromCommonProject method.
         /// </summary>
         /// <returns>string object.</returns>
-        Task<string> GetMyName();
+        Task<string> GetMyNameFromCommonProject();
     
         /// <summary>
-        /// GetSampleForBoolean method.
+        /// GetSampleForBooleanFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        Task<bool> GetSampleForBoolean();
+        Task<bool> GetSampleForBooleanFromCommonProject();
     
     }
     

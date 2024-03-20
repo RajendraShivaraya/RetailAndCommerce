@@ -39,6 +39,8 @@ This extension is to get the store hours. Below are the sequence of objects crea
    1. {{General_RetailServer}}/RetailServer/Commerce/RajendraEntityAPI/GetMyName?api-version=7.3z
    2. {{General_RetailServer}}/RetailServer/Commerce/RajSampleGet?api-version=7.3
 
+6. We also created a new project just for controller classes, this project is kind of entry project where we can see all the API's.
+   This project will have reference to all the CRT extensions project like StoreHours we created in earlier steps.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## Commerce Proxy Generator
@@ -69,4 +71,15 @@ C# proxy generator project.
 
 Both Projects will have reference to 'RajendraRetailServerExtensions' which inturn have all the controllers classes and entities.
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+## Commerce Proxy Generator
+
+Once we have all the CRT, StoreCommerce, Scale Unit installers working properly, we should we moving to consume our CRT customization in POS client.
+
+1. Create a new POS C# library project and have the appropriate dependencies like KnockOutJs, Commerce.Sdk.Pos, Microsoft.TypeScript.MSBuild.
+2. Upon building empty project, SDK.Pos automatically creates devDependencies like Pos.Api.d.ts, Pos.Types.d.ts, payments.d.ts
+3. Create a new "Resources" folder which would Strings/en-US. This is required for localization requirement, if we want to display the label based on languages.
+4. Create a new type script config file i.e. tsConfig.json under POS project. This would extend from pos-tsconfig-base.json which is available under devDependencies.
+5. Create a manifest.json file, this is **important** file as all the POS customization details needs to be added to reflect in POS.
+6. Added some simple customization "RajSearchExtension" as part of initial checkIn.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------

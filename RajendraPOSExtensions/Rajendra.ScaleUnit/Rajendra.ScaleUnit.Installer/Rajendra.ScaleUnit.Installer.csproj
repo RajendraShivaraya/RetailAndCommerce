@@ -14,6 +14,7 @@
     <ProjectReference Include="..\..\Rajendra.Extensions\ChannelDatabase\ChannelDatabase.csproj" ReferenceOutputAssembly="false" />
     <ProjectReference Include="..\..\Rajendra.Extensions\CommerceRuntime\Runtime.Extension.StoreHours\Runtime.Extension.StoreHours.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
     <ProjectReference Include="..\..\Rajendra.Extensions\POS\POS.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+    <ProjectReference Include="..\..\Rajendra.Extensions\CommerceRuntime\RajendraRetailServerExtensions\RajendraRetailServerExtensions.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
   </ItemGroup>
   
 </Project>

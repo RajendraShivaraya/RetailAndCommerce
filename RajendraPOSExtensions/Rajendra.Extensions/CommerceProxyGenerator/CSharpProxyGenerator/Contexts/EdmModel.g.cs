@@ -14,35 +14,37 @@
         private static string edmx = "<edmx:Edmx Version=\"4.0\" xmlns:edmx=\"http://docs.oasis-open.org/odata/ns/edmx\">\r\n" +
     "  <edmx:DataServices>\r\n    <Schema Namespace=\"Microsoft.Dynamics.Retail.RetailSe" +
     "rverLibrary\" xmlns=\"http://docs.oasis-open.org/odata/ns/edm\">\r\n      <Action Nam" +
-    "e=\"GetStoreHoursByRecId\" IsBound=\"true\">\r\n        <Parameter Name=\"bindingParame" +
-    "ter\" Type=\"Collection(Runtime.Extension.StoreHours.Entities.RajStoreDayHoursEnti" +
-    "ty)\" />\r\n        <Parameter Name=\"storeNumber\" Type=\"Edm.String\" />\r\n        <Re" +
-    "turnType Type=\"Collection(Runtime.Extension.StoreHours.Entities.RajStoreDayHours" +
-    "Entity)\" />\r\n      </Action>\r\n      <Function Name=\"GetMyName\" IsBound=\"true\">\r\n" +
-    "        <Parameter Name=\"bindingParameter\" Type=\"Collection(Runtime.Extension.St" +
-    "oreHours.Entities.RajStoreDayHoursEntity)\" />\r\n        <ReturnType Type=\"Edm.Str" +
-    "ing\" />\r\n      </Function>\r\n      <Function Name=\"GetSampleForBoolean\" IsBound=\"" +
-    "true\">\r\n        <Parameter Name=\"bindingParameter\" Type=\"Collection(Runtime.Exte" +
-    "nsion.StoreHours.Entities.RajStoreDayHoursEntity)\" />\r\n        <ReturnType Type=" +
-    "\"Edm.Boolean\" Nullable=\"false\" />\r\n      </Function>\r\n      <Action Name=\"RajSam" +
-    "plePost\">\r\n        <ReturnType Type=\"Edm.Boolean\" Nullable=\"false\" />\r\n      </A" +
-    "ction>\r\n      <Function Name=\"RajSampleGet\">\r\n        <ReturnType Type=\"Edm.Bool" +
-    "ean\" Nullable=\"false\" />\r\n      </Function>\r\n      <EntityContainer Name=\"Commer" +
-    "ceContext\">\r\n        <EntitySet Name=\"RajendraEntityAPI\" EntityType=\"Runtime.Ext" +
-    "ension.StoreHours.Entities.RajStoreDayHoursEntity\" />\r\n        <ActionImport Nam" +
-    "e=\"RajSamplePost\" Action=\"Microsoft.Dynamics.Retail.RetailServerLibrary.RajSampl" +
-    "ePost\" />\r\n        <FunctionImport Name=\"RajSampleGet\" Function=\"Microsoft.Dynam" +
-    "ics.Retail.RetailServerLibrary.RajSampleGet\" IncludeInServiceDocument=\"true\" />\r" +
-    "\n      </EntityContainer>\r\n    </Schema>\r\n    <Schema Namespace=\"Runtime.Extensi" +
-    "on.StoreHours.Entities\" xmlns=\"http://docs.oasis-open.org/odata/ns/edm\">\r\n      " +
-    "<EntityType Name=\"RajStoreDayHoursEntity\">\r\n        <Key>\r\n          <PropertyRe" +
-    "f Name=\"Id\" />\r\n        </Key>\r\n        <Property Name=\"DayOfWeek\" Type=\"Edm.Int" +
-    "32\" Nullable=\"false\" />\r\n        <Property Name=\"OpenTime\" Type=\"Edm.Int32\" Null" +
-    "able=\"false\" />\r\n        <Property Name=\"CloseTime\" Type=\"Edm.Int32\" Nullable=\"f" +
-    "alse\" />\r\n        <Property Name=\"Id\" Type=\"Edm.Int64\" Nullable=\"false\" />\r\n    " +
-    "    <Property Name=\"ExtensionProperties\" Type=\"Collection(Microsoft.Dynamics.Com" +
-    "merce.Runtime.DataModel.CommerceProperty)\" />\r\n      </EntityType>\r\n    </Schema" +
-    ">\r\n  </edmx:DataServices>\r\n</edmx:Edmx>";
+    "e=\"GetStoreHoursByRecIdFromCommonProject\" IsBound=\"true\">\r\n        <Parameter Na" +
+    "me=\"bindingParameter\" Type=\"Collection(Runtime.Extension.StoreHours.Entities.Raj" +
+    "StoreDayHoursEntity)\" />\r\n        <Parameter Name=\"storeNumber\" Type=\"Edm.String" +
+    "\" />\r\n        <ReturnType Type=\"Collection(Runtime.Extension.StoreHours.Entities" +
+    ".RajStoreDayHoursEntity)\" />\r\n      </Action>\r\n      <Function Name=\"GetMyNameFr" +
+    "omCommonProject\" IsBound=\"true\">\r\n        <Parameter Name=\"bindingParameter\" Typ" +
+    "e=\"Collection(Runtime.Extension.StoreHours.Entities.RajStoreDayHoursEntity)\" />\r" +
+    "\n        <ReturnType Type=\"Edm.String\" />\r\n      </Function>\r\n      <Function Na" +
+    "me=\"GetSampleForBooleanFromCommonProject\" IsBound=\"true\">\r\n        <Parameter Na" +
+    "me=\"bindingParameter\" Type=\"Collection(Runtime.Extension.StoreHours.Entities.Raj" +
+    "StoreDayHoursEntity)\" />\r\n        <ReturnType Type=\"Edm.Boolean\" Nullable=\"false" +
+    "\" />\r\n      </Function>\r\n      <Action Name=\"RajSamplePostFromCommonProject\">\r\n " +
+    "       <ReturnType Type=\"Edm.Boolean\" Nullable=\"false\" />\r\n      </Action>\r\n    " +
+    "  <Function Name=\"RajSampleGetFromCommonProject\">\r\n        <ReturnType Type=\"Edm" +
+    ".Boolean\" Nullable=\"false\" />\r\n      </Function>\r\n      <EntityContainer Name=\"C" +
+    "ommerceContext\">\r\n        <EntitySet Name=\"RajendraEntityAPI\" EntityType=\"Runtim" +
+    "e.Extension.StoreHours.Entities.RajStoreDayHoursEntity\" />\r\n        <ActionImpor" +
+    "t Name=\"RajSamplePostFromCommonProject\" Action=\"Microsoft.Dynamics.Retail.Retail" +
+    "ServerLibrary.RajSamplePostFromCommonProject\" />\r\n        <FunctionImport Name=\"" +
+    "RajSampleGetFromCommonProject\" Function=\"Microsoft.Dynamics.Retail.RetailServerL" +
+    "ibrary.RajSampleGetFromCommonProject\" IncludeInServiceDocument=\"true\" />\r\n      " +
+    "</EntityContainer>\r\n    </Schema>\r\n    <Schema Namespace=\"Runtime.Extension.Stor" +
+    "eHours.Entities\" xmlns=\"http://docs.oasis-open.org/odata/ns/edm\">\r\n      <Entity" +
+    "Type Name=\"RajStoreDayHoursEntity\">\r\n        <Key>\r\n          <PropertyRef Name=" +
+    "\"Id\" />\r\n        </Key>\r\n        <Property Name=\"DayOfWeek\" Type=\"Edm.Int32\" Nul" +
+    "lable=\"false\" />\r\n        <Property Name=\"OpenTime\" Type=\"Edm.Int32\" Nullable=\"f" +
+    "alse\" />\r\n        <Property Name=\"CloseTime\" Type=\"Edm.Int32\" Nullable=\"false\" /" +
+    ">\r\n        <Property Name=\"Id\" Type=\"Edm.Int64\" Nullable=\"false\" />\r\n        <Pr" +
+    "operty Name=\"ExtensionProperties\" Type=\"Collection(Microsoft.Dynamics.Commerce.R" +
+    "untime.DataModel.CommerceProperty)\" />\r\n      </EntityType>\r\n    </Schema>\r\n  </" +
+    "edmx:DataServices>\r\n</edmx:Edmx>";
         private static string apiVersion = "7.3";
         private static System.Collections.Generic.Dictionary<System.Type, string> proxyTypeToRuntimeTypeNameMap = new System.Collections.Generic.Dictionary<System.Type, string>()
         {

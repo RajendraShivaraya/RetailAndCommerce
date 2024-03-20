@@ -12,5 +12,22 @@
     <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="$(TypeScriptPackagesVersion)" />
     <PackageReference Include="knockoutjs" Version="3.5.*" />
   </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\CommerceRuntime\RajendraRetailServerExtensions\RajendraRetailServerExtensions.csproj" ReferenceOutputAssembly="false" SkipGetTargetFrameworkProperties="true" />
+  </ItemGroup>
+
+
+  <Target Name="ContentIncludeKnockoutLibrary" BeforeTargets="AssignTargetPaths" DependsOnTargets="RunResolvePackageDependencies">
+    <PropertyGroup>
+      <KnockoutLibraryFilePath Condition="'%(PackageDefinitions.Name)' == 'knockoutjs'">%(PackageDefinitions.ResolvedPath)\Content\Scripts\knockout-%(PackageDefinitions.Version).js</KnockoutLibraryFilePath>
+    </PropertyGroup>
+    <Copy SourceFiles="$(KnockoutLibraryFilePath)" DestinationFiles="$(KnockoutjsFile)" SkipUnchangedFiles="true" />
+    <!-- Necessary for CPOS -->
+    <ItemGroup>
+      <Content Include="$(KnockoutjsFile)"></Content>
+    </ItemGroup>
+  </Target>
   
 </Project>

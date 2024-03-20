@@ -18,16 +18,16 @@ namespace Rajendra.Commerce.RetailProxy.Extension
     {
         
         /// <summary>
-        /// RajSamplePost method.
+        /// RajSamplePostFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        Task<bool> RajSamplePost();
+        Task<bool> RajSamplePostFromCommonProject();
     
         /// <summary>
-        /// RajSampleGet method.
+        /// RajSampleGetFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        Task<bool> RajSampleGet();
+        Task<bool> RajSampleGetFromCommonProject();
     
     }
     
@@ -39,24 +39,24 @@ namespace Rajendra.Commerce.RetailProxy.Extension
     {
         
         /// <summary>
-        /// GetStoreHoursByRecId method.
+        /// GetStoreHoursByRecIdFromCommonProject method.
         /// </summary>
         /// <param name="storeNumber">The storeNumber.</param>
         /// <param name="queryResultSettings">The queryResultSettings.</param>
         /// <returns>Collection of RajStoreDayHoursEntity.</returns>
-        Task<PagedResult<RajStoreDayHoursEntity>> GetStoreHoursByRecId(string storeNumber, QueryResultSettings queryResultSettings = null);
+        Task<PagedResult<RajStoreDayHoursEntity>> GetStoreHoursByRecIdFromCommonProject(string storeNumber, QueryResultSettings queryResultSettings = null);
     
         /// <summary>
-        /// GetMyName method.
+        /// GetMyNameFromCommonProject method.
         /// </summary>
         /// <returns>string object.</returns>
-        Task<string> GetMyName();
+        Task<string> GetMyNameFromCommonProject();
     
         /// <summary>
-        /// GetSampleForBoolean method.
+        /// GetSampleForBooleanFromCommonProject method.
         /// </summary>
         /// <returns>bool object.</returns>
-        Task<bool> GetSampleForBoolean();
+        Task<bool> GetSampleForBooleanFromCommonProject();
     
     }
     
