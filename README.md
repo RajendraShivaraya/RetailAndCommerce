@@ -60,7 +60,13 @@ the actual implementation. In that way, you can include the files in the extensi
 and can access the Commerce APIs and the entities by using the metadata and interface that 
 are generated.
 
-1. Create a new C# proxy project which generates proxies for all the retail server extensions.
-2. Create a new project 'RajendraRetailServerExtensions' this has all the controller classes of 
+
+1. Create a new project 'RajendraRetailServerExtensions' this has all the controller classes of 
 all the extensions. This is one folder for all the controller classes. This folder is referenced in 
-C# proxy generator project
+C# proxy generator project.
+2. Create a new C# proxy project which generates proxies for all the retail server extensions.
+3. Create a new TypeScript proxy project which generates proxies for all the retail server extensions.
+
+Both Projects will have reference to 'RajendraRetailServerExtensions' which inturn have all the controllers classes and entities.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

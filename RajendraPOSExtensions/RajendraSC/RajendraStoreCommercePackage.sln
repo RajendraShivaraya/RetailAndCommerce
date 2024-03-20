@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.ScaleUnit.Installe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.SC.Installer", "SC.Installer\Rajendra.SC.Installer.csproj", "{01D373A0-4C79-4286-98CD-0E61781BB759}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RajendraRetailServerExtensions", "..\Rajendra.Extensions\CommerceRuntime\RajendraRetailServerExtensions\RajendraRetailServerExtensions.csproj", "{4A0EEC9C-7BF3-4BF0-B89D-1912CC68CB42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RajendraRetailServerExtensions", "..\Rajendra.Extensions\CommerceRuntime\RajendraRetailServerExtensions\RajendraRetailServerExtensions.csproj", "{4A0EEC9C-7BF3-4BF0-B89D-1912CC68CB42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProxyGenerator", "..\Rajendra.Extensions\CommerceProxyGenerator\CSharpProxyGenerator\CSharpProxyGenerator.csproj", "{2BD0ACC6-69FC-4DEF-923D-69D123782528}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpProxyGenerator", "..\Rajendra.Extensions\CommerceProxyGenerator\CSharpProxyGenerator\CSharpProxyGenerator.csproj", "{2BD0ACC6-69FC-4DEF-923D-69D123782528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeScriptProxyGenerator", "..\Rajendra.Extensions\CommerceProxyGenerator\TypeScriptProxyGenerator\TypeScriptProxyGenerator.csproj", "{D452C774-1335-4937-B351-CC1CB65A16EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{2BD0ACC6-69FC-4DEF-923D-69D123782528}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BD0ACC6-69FC-4DEF-923D-69D123782528}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BD0ACC6-69FC-4DEF-923D-69D123782528}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D452C774-1335-4937-B351-CC1CB65A16EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D452C774-1335-4937-B351-CC1CB65A16EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D452C774-1335-4937-B351-CC1CB65A16EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D452C774-1335-4937-B351-CC1CB65A16EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
