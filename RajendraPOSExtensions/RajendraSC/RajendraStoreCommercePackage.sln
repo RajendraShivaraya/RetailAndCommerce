@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.ScaleUnit.Installe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rajendra.SC.Installer", "SC.Installer\Rajendra.SC.Installer.csproj", "{01D373A0-4C79-4286-98CD-0E61781BB759}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RajendraRetailServerExtensions", "..\Rajendra.Extensions\CommerceRuntime\RajendraRetailServerExtensions\RajendraRetailServerExtensions.csproj", "{4A0EEC9C-7BF3-4BF0-B89D-1912CC68CB42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpProxyGenerator", "..\Rajendra.Extensions\CommerceProxyGenerator\CSharpProxyGenerator\CSharpProxyGenerator.csproj", "{2BD0ACC6-69FC-4DEF-923D-69D123782528}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{01D373A0-4C79-4286-98CD-0E61781BB759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01D373A0-4C79-4286-98CD-0E61781BB759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01D373A0-4C79-4286-98CD-0E61781BB759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A0EEC9C-7BF3-4BF0-B89D-1912CC68CB42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A0EEC9C-7BF3-4BF0-B89D-1912CC68CB42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A0EEC9C-7BF3-4BF0-B89D-1912CC68CB42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A0EEC9C-7BF3-4BF0-B89D-1912CC68CB42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD0ACC6-69FC-4DEF-923D-69D123782528}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD0ACC6-69FC-4DEF-923D-69D123782528}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD0ACC6-69FC-4DEF-923D-69D123782528}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD0ACC6-69FC-4DEF-923D-69D123782528}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
